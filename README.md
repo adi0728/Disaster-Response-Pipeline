@@ -7,6 +7,14 @@ step 2 - Use the processed data in step 1 to create a ML pipeline and save the r
 
 There is a web app created in flask that will allow a Emergency worker to key in the message and identify the relavent categories/departments to which the message can be shared with. The model we have saved earlier is used for this functionality. 
 
+Project Components There are three components we'll need to complete for this project.
+
+ETL Pipeline, process_data.py, is a data cleaning pipeline that: Loads the messages and categories datasets. Merges the two datasets and loads the datasets in a databse
+
+ML Pipeline , train_classifier.py, write a machine learning pipeline that: Loads data from the SQLite database Splits the dataset into training and test sets Builds a text processing and machine learning pipeline Trains and tunes a model using GridSearchCV Outputs results on the test set Exports the final model as a pickle file
+
+Flask Web App We will be taking the user message and classify them into 36 categories. 
+
 Below is a list of instructions to run the ETL, ML pipelines and fire up the flask application
 
 ### Instructions:
